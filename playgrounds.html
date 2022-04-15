@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/playgrounds.css">
+</head>
+<body>
+<div class="main">
+    <header>
+        <a href="index.html" class="logo">
+            <img src="./img/Logo.png" alt="">
+        </a>
+        <div class="menu">
+            <div class="burger_menu">
+                <img src="./img/burger.svg" alt="">
+            </div>
+            <ul>
+                <li>Спорт площадки</li>
+                <li>Добавить площадку</li>
+                <li>Войти</li>
+            </ul>
+        </div>
+    </header>
+    <section class="container">
+        <div class="filter">
+            <div class="filter_title">
+                <h2>Фильтры</h2>
+            </div>
+            <div class="filter_name">
+                <p>Площадка</p>
+                <div class="filter_sub">
+                    <input type="radio" class="radio-button">
+                    <p>Открытая</p>
+                </div>
+                <div class="filter_sub">
+                    <input type="radio" class="radio-button">
+                    <p>Крытая</p>
+                </div>
+            </div>
+            <div class="filter_name sport">
+                <p>Спортзал</p>
+                <div class="filter_sub">
+                    <input type="checkbox" class="checkbox">
+                    <p>Футбольная</p>
+                </div>
+                <div class="filter_sub">
+                    <input type="checkbox" class="checkbox">
+                    <p>Баскетбольная</p>
+                </div>
+                <div class="filter_sub">
+                    <input type="checkbox" class="checkbox">
+                    <p>Волейбольная</p>
+                </div>
+            </div>
+            <div class="filter_name filter_price_">
+                <p>Цена, тг </p>
+                <div class="filter_sub">
+                    <p>от</p>
+                    <input type="text" class="price-input">
+                    <p>до</p>
+                    <input type="text" class="price-input">
+                </div>
+
+            </div>
+
+            <div class="filter_button">
+                <button>Найти</button>
+            </div>
+        </div>
+        <div class="playgrounds">
+            <input type="text" placeholder="Алматы арена" class="search_input">
+            <div class="list_playgrounds">
+                <div class="playground_card">
+                    <div class="playground_card_photo">
+
+                    </div>
+                    <div class="playground_card_info">
+                        <div class="playground_card_info_title">
+                            <h2>Алматы арена</h2>
+                        </div>
+                        <div class="playground_card_info_subtitle">
+                            <img src="img/placeholder1.png" alt="">
+                            <p>ул. Б.Момышулы</p>
+                        </div>
+                        <div class="playground_card_info_subtitle2">
+                            <img src="img/football-field 1.png" alt="">
+                            <p class="playground_type">Футбольный зал</p>
+                            <hr class="seperator">
+                            <p class="playground_info">Крытая площадка</p>
+                        </div>
+                        <div class="playground_card_info_subtitle">
+                            <img src="img/star.png" alt="">
+                            <p>4.8
+                                <slot class="review-number">(5.4к отзывов)</slot>
+                            </p>
+                        </div>
+                        <div class="playground_card_price">
+                            <p>3000 т <slot class="price-info">/час</slot> </p>
+                        </div>
+                        <div class="playground_more_info">
+                            <button><h2>Подробнее</h2></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playground_card">
+                    <div class="playground_card_photo">
+
+                    </div>
+                    <div class="playground_card_info">
+                        <div class="playground_card_info_title">
+                            <h2>Алматы арена</h2>
+                        </div>
+                        <div class="playground_card_info_subtitle">
+                            <img src="img/placeholder1.png" alt="">
+                            <p>ул. Б.Момышулы</p>
+                        </div>
+                        <div class="playground_card_info_subtitle2">
+                            <img src="img/football-field 1.png" alt="">
+                            <p class="playground_type">Футбольный зал</p>
+                            <hr class="seperator">
+                            <p class="playground_info">Крытая площадка</p>
+                        </div>
+                        <div class="playground_card_info_subtitle">
+                            <img src="img/star.png" alt="">
+                            <p>4.8
+                                <slot class="review-number">(5.4к отзывов)</slot>
+                            </p>
+                        </div>
+                        <div class="playground_card_price">
+                            <p>3000 т <slot class="price-info">/час</slot> </p>
+                        </div>
+                        <div class="playground_more_info">
+                            <button><h2>Подробнее</h2></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playground_card">
+                    <div class="playground_card_photo"></div>
+                    <div class="playground_card_info">
+                        <div class="playground_card_info_title">
+                            <h2>Алматы арена</h2>
+                        </div>
+                        <div class="playground_card_info_subtitle">
+                            <img src="img/placeholder1.png" alt="">
+                            <p>ул. Б.Момышулы</p>
+                        </div>
+                        <div class="playground_card_info_subtitle2">
+                            <img src="img/football-field 1.png" alt="">
+                            <p class="playground_type">Футбольный зал</p>
+                            <hr class="seperator">
+                            <p class="playground_info">Крытая площадка</p>
+                        </div>
+                        <div class="playground_card_info_subtitle">
+                            <img src="img/star.png" alt="">
+                            <p>4.8
+                                <slot class="review-number">(5.4к отзывов)</slot>
+                            </p>
+                        </div>
+                        <div class="playground_card_price">
+                            <p>3000 т <slot class="price-info">/час</slot> </p>
+                        </div>
+                        <div class="playground_more_info">
+                            <button><h2>Подробнее</h2></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

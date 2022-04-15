@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Booking page</title>
+    <link rel="stylesheet" href="./css/addPlayground.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="./img/Logo.png" alt="">
+        </a>
+        <div class="menu">
+            <div class="burger_menu">
+                <img src="./img/burger.svg" alt="">
+            </div>
+            <ul>
+                <li>Спорт площадки</li>
+                <li>Добавить площадку</li>
+                <li>Войти</li>
+            </ul>
+        </div>
+    </header>
+    <section class="main">
+        <div class="main_container">
+            <input type="text" placeholder="Название спорт площадки" class="name inputs">
+            <input type="text" placeholder="Адрес" class="address inputs">
+            <select class="type_playground inputs" name="playground_type" id="">
+                <option disabled selected>Тип площадки</option>
+                <option value="first">A</option>
+                <option value="second">B</option>
+            </select>
+            <div class="buttons">
+                <button class="left ">Открытая</button>
+                <button class="right checked">Крытая</button>
+            </div>
+
+            <ul class="list">
+                <li class="list_item">
+                    <label for="duw">
+                        <input type="checkbox" id="duw" class="checkbox">
+                        <span>Душ</span>
+                    </label>
+                </li>
+                <li class="list_item">
+                    <label for="razd">
+                        <input type="checkbox" id="razd" class="checkbox">
+                        <span>Раздевалка</span>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="add_img">
+                <label class="custom-file-upload inputs">
+                    <input type="file"/>
+                    Прикрепить фото
+                    <img src="./img/file.svg" alt="">
+                </label>
+            </div>
+
+            <button class="send_btn">
+                Отправить
+            </button>
+        </div>
+    </section>
+</body>
+</html>
